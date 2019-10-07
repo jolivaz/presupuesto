@@ -1,22 +1,209 @@
-.App {
+.alert p {
+  margin-bottom: 0!important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #000428;  /* fallback for old browsers */
+  background: linear-gradient(to right, #004e92, #000428); 
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  
+}
+header {
+  margin: 30px 0;
+}
+.contenido {
+  padding:20px;
+}
+.contenido-principal {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: white;
+}
+.presupuesto p{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.presupuesto p span {
+  font-weight: normal;
+}
+#gastos {
+  margin-bottom: 30px;
+}
+h1 {
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  font-size: 4.8rem!important;
+  font-family: 'Raleway', sans-serif;
+}
+h2 {
+  color:#004e92;
+  font-weight: 100;
+  margin-bottom:30px;
+  text-align: center;
+  font-size:3rem!important;
+  font-family: 'Raleway', sans-serif;
+}
+.campo {
+  margin-bottom: 2rem;
+}
+.error {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
+.alert {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: .25rem;
+  padding: .75rem 1.25rem;
+  border: 1px solid transparent;
+}
+.alert-primary {
+  color: #004085;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gastos-realizados  {
+  margin-bottom: 2rem;
+}
+.gastos-realizados li{
+  padding: 1rem 0;
+  list-style: none;
+  margin-bottom: 0rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.gastos-realizados li:last-of-type {
+  margin-bottom: 0!important;
+}
+.gastos-realizados li p {
+  margin:0;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+}
+.gastos-realizados li p .gasto {
+  color:white;
+  padding: 1rem;
+  background-color: #004085;
+}
+.formulario-presupuesto{
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 20px 80px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 1px solid #fff;
+  background: rgba(172, 192, 223, 0.2);
+}
+.formulario-presupuesto input[type=number]{
+  width: 30%;
+  margin: 5px 0;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 5px 10px;
+
+}
+.formulario-presupuesto input[type=submit]{
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  margin: 20px auto;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.formulario-gastos{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #fff;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #09d3ac;
+.formulario-crear{
+  width: 50%;
+  border-right: 1px solid #fff; 
+}
+.formulario-crear form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.formulario-crear input{
+  width: 50%;
+  color: #fff;
+  margin: 10px 0;
+  font-size: 18px;
+  text-align: center;
+  background: transparent;
+}
+.formulario-crear input[type=submit]{
+  background: #fff;
+  color: #004e92;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.listado-gastos{
+  padding: 0 20px;
+}
+.sin-gastos{
+  color: #fff;
+  text-align: center;
+}
+.elemento-gasto{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #fff;
+}
+.elemento-gasto:last-child{
+  border-bottom: none;
+}
+.elemento-gasto h6{
+  width: 50%;
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  border-right: 1px solid #fff;
+}
+.elemento-gasto p{
+  color: #fff;
+}
+.elemento-gasto i{
+  color: #fff;
+  cursor: pointer;
+}
+.disponible{
+  width: 100%;
+}
+.disponible h2{
+  color: #fff;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 25px!important;
+}
+.montos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.montos div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.disponible h3{
+  color: #fff;
+  font-size: 21px;
+  font-weight: 100;
+}
+
+h2.alert-success {
+  color: #155724;
+}
+h2.alert-danger {
+  color: #721c24;
+}
+h2.alert-warning {
+  color: #856404;
 }
